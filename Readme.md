@@ -111,10 +111,12 @@ char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 * PCB
 ![Image](https://github.com/user-attachments/assets/269df91b-5e3a-450e-b532-fb00e08704b2)
 
-
+![Image](https://github.com/user-attachments/assets/50472e05-eca9-4d9c-98fe-9d993f899775)
 
 * Hình ảnh sản phẩm  
-   
+![Image](https://github.com/user-attachments/assets/88b924fd-abc2-44f7-b6f4-481f6d430209)
+
+![Image](https://github.com/user-attachments/assets/fd5854f6-4b77-405f-87bb-b847e87cf995) ![Image](https://github.com/user-attachments/assets/3d269879-631f-4f1b-ac46-a107465c9e8b)
 
 * Video chạy thử sản phẩm  
 
