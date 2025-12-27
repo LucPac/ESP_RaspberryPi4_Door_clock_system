@@ -54,7 +54,7 @@ Dự án này cung cấp một giải pháp hoàn chỉnh cho việc xây dựng
 * Cài đặt VS Code và PlatformIO IDE Extension
 * Clone hoặc tải về
     ```bash
-    git clone https://github.com/your-username/ESP_RaspberryPi4_Door_clock_system.git
+    git clone https://github.com/your-username/ESP_RaspberryPi4_Door_lock_system.git
     ```
 * Mở dự án trong VS Code với PlatformIO
 * Cấu hình thông tin Blynk và Wifi (xem phần dưới).
