@@ -1,20 +1,20 @@
 <div align="center">
-  <h1>🚪✨ Hệ thống kiểm soát ra vào ✨🚪</h1>
+  <h1>🚪✨ Smart Door Access Control System ✨🚪</h1>
   <p>
-    <img src="https://img.shields.io/badge/Vi%20%C4%91i%E1%BB%83u%20khi%E1%BB%83n-ESP32-blueviolet?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32 Badge">
-    <img src="https://img.shields.io/badge/Vi%20%C4%91i%E1%BB%83u%20khi%E1%BB%83n-Raspberry-red?style=for-the-badge&logo=espressif&logoColor=white" alt="Raspberry Badge">
-    <img src="https://img.shields.io/badge/N%E1%BB%81n%20t%E1%BA%A3ng-Blynk-brightgreen?style=for-the-badge&logo=blynk&logoColor=white" alt="Blynk Badge">
-    <img src="https://img.shields.io/badge/Ng%C3%B4n%20ng%E1%BB%AF-C%2B%2B-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Badge">
-    <img src="https://img.shields.io/badge/Ng%C3%B4n%20ng%E1%BB%AF-Python-yellow?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="Python Badge">
+    <img src="https://img.shields.io/badge/Microcontroller-ESP32-blueviolet?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32 Badge">
+    <img src="https://img.shields.io/badge/Microcontroller-Raspberry-red?style=for-the-badge&logo=espressif&logoColor=white" alt="Raspberry Badge">
+    <img src="https://img.shields.io/badge/Platform-Blynk-brightgreen?style=for-the-badge&logo=blynk&logoColor=white" alt="Blynk Badge">
+    <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Badge">
+    <img src="https://img.shields.io/badge/Language-Python-yellow?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="Python Badge">
   </p>
 
   ---
 
   <p>
-    <a href="#🚀-tổng-quan">Tổng quan</a> •
-    <a href="#🛠️-hướng-dẫn-cài-đặt-và-sử-dụng">Hướng dẫn cài đặt và sử dụng</a> •
-    <a href="#⚙️-cấu-hình-blynk">Cấu hình Blynk</a> •
-    <a href="#🚩-sản-phẩm-thực-tế">Sản phẩm thực tế</a>
+    <a href="#🚀-overview">Overview</a> •
+    <a href="#🛠️-installation-and-usage-guide">Installation and Usage Guide</a> •
+    <a href="#⚙️-blynk-configuration">Blynk Configuration</a> •
+    <a href="#🚩-actual-product">Actual Product</a>
   </p>
 
   ---
@@ -22,104 +22,99 @@
 
 <br>
 
-## 🚀 Tổng quan
+## 🚀 Overview
 
-Chào mừng bạn đến với kho lưu trữ **`ESP32_Smart_door`**!
+Welcome to the **`ESP32_Smart_door`** repository!
 
-Dự án này cung cấp một giải pháp hoàn chỉnh cho việc xây dựng một hệ thống cửa thông minh, cho phép bạn điều khiển đóng/mở và giám sát trạng thái của cửa từ bất cứ đâu thông qua ứng dụng di động Blynk. Sử dụng vi điều khiển ESP32 mạnh mẽ, dự án này là sự kết hợp giữa phần cứng và phần mềm để mang lại sự tiện lợi và an toàn cho ngôi nhà của bạn.
+This project provides a complete solution for building a smart door system that allows you to control and monitor your door from anywhere using the Blynk mobile app. Using the powerful ESP32 microcontroller, this project combines hardware and software to bring convenience and security to your home.
 
 <br>
 
-## 🛠️ Hướng dẫn cài đặt và sử dụng
+## 🛠️ Installation and Usage Guide
 
-Để triển khai dự án này, bạn cần có các phần mềm và thành phần phần cứng sau:
+To deploy this project, you need the following software and hardware components:
 
-### Yêu cầu phần mềm:
+### Software Requirements:
 * VS Code
 * Arduino
 * PlatformIO IDE Extension
-* Ứng dụng Blynk (Android/iOS)
+* Blynk App (Android/iOS)
 
-### Yêu cầu phần cứng:
+### Hardware Requirements:
 * ESP32
 * ESP Cam
-* Raspberry
+* Raspberry Pi
 * RC522 - RFID
-* Servo SG90 (Mô phỏng cửa)
-* Ma trận phím 4x4
-* Breadboard, dây cắm hoặc vẽ PCB và hàn mạch
+* Servo SG90 (Door simulator)
+* 4x4 Keypad Matrix
+* Breadboard, jumper wires or PCB design and soldering
 
-### Các bước cơ bản:
+### Basic Steps:
 
-* Cài đặt VS Code và PlatformIO IDE Extension
-* Clone hoặc tải về
+* Install VS Code and PlatformIO IDE Extension
+* Clone or download the project
     ```bash
-    git clone https://github.com/your-username/ESP_RaspberryPi4_Door_lock_system.git
+    git clone https://github.com/your-username/ESP_RaspberryPi4_Door_clock_system.git
     ```
-* Mở dự án trong VS Code với PlatformIO
-* Cấu hình thông tin Blynk và Wifi (xem phần dưới).
-* Biên dịch và Upload mã nguồn
-* Thiết lập ứng dụng Blynk
-* Kết nối phần cứng
+* Open the project in VS Code with PlatformIO
+* Configure Blynk and WiFi information (see section below)
+* Compile and upload the source code
+* Set up the Blynk app
+* Connect the hardware
 
 <br>
 
-## ⚙️ Cấu hình Blynk
+## ⚙️ Blynk Configuration
 
-Để dự án hoạt động, bạn cần cấu hình tài khoản và dự án Blynk của mình.
+To make the project work, you need to configure your Blynk account and project.
 
-### 1. Tạo dự án mới trên Blynk Console
-* Truy cập [Blynk Console](https://blynk.cloud/) và tạo một tài khoản (nếu chưa có).
-* Tạo một **New Template** cho dự án "Smart Door".
-* Ghi lại **Template ID** và **Template Name**.
-* Khi tạo thiết bị mới từ Template này, bạn sẽ nhận được một **Auth Token**.
+### 1. Create a New Project on Blynk Console
+* Go to [Blynk Console](https://blynk.cloud/) and create an account (if you don't have one).
+* Create a **New Template** for the "Smart Door" project.
+* Save the **Template ID** and **Template Name**.
+* When you create a new device from this template, you will receive an **Auth Token**.
 
-### 2. Cập nhật thông tin vào mã nguồn
-Trong file `src/main.cpp`, bạn cần thay thế các placeholder sau bằng thông tin của mình:
-* Nhập thông tin trên Blynk của bạn vào khoảng trống.
-* Tiếp theo nhập tên và mật khẩu Wifi.
+### 2. Update the Information in Source Code
+In the `src/main.cpp` file, you need to replace the following placeholders with your information:
+* Enter your Blynk information in the blank spaces.
+* Then enter your WiFi name and password.
 ```cpp
 #define BLYNK_TEMPLATE_ID "YOUR_BLYNK_TEMPLATE_ID"
-#define BLYNK_DEVICE_NAME "YOUR_BLYNK_TEMPLATE_NAME" // Tên thiết bị của bạn
+#define BLYNK_DEVICE_NAME "YOUR_BLYNK_TEMPLATE_NAME" // Your device name
 #define BLYNK_AUTH_TOKEN "YOUR_BLYNK_AUTH_TOKEN"
 
-char ssid[] = "YOUR_WIFI_SSID";     // Tên mạng Wifi của bạn
-char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
+char ssid[] = "YOUR_WIFI_SSID";     // Your WiFi network name
+char pass[] = "YOUR_WIFI_PASSWORD"; // Your WiFi password
 ```
 
-### 3. Thiết lập Datastreams trên ứng dụng Blynk
-* Thiết lập công tắc ảo Control Pass để điều khiển việc cho phép và không cho phép nhập mật khẩu.
-* Thiết lập công tắc ảo Control Door để đóng mở cửa từ xa.
-* Bạn cần tạo các Datastreams tương ứng trên ứng dụng Blynk để điều khiển và giám sát cửa
+### 3. Set Up Datastreams in Blynk App
+* Set up the virtual Control Pass switch to enable or disable password entry.
+* Set up the virtual Control Door switch to open/close the door remotely.
+* You need to create the corresponding Datastreams in the Blynk app to control and monitor the door.
 
-**Control Door**: Dùng cho điều khiển đóng/mở cửa.  
-**Control Pass**: Dùng để điều khiển việc cho phép và không cho phép nhập mật khẩu.
+**Control Door**: Used to control door opening/closing.  
+**Control Pass**: Used to enable or disable password entry.
 
 ![Image](https://github.com/user-attachments/assets/fcbd7521-018a-412e-ab2a-13345259e6de)
 
-### 4. Thiết lập Events & Notifications trên Blynk
-* Thiết lập để nhận thông báo khi cửa mở và khi nhập sai mật khẩu quá nhiều lần.
+### 4. Set Up Events & Notifications in Blynk
+* Set up to receive notifications when the door opens and when incorrect password is entered too many times.
   
-**door_warning**: Nhận thông báo khi nhập sai mật khẩu quá nhiều lần.  
-**infor_log**: Nhận thông báo khi cửa mở và khi có người lạ đứng lâu trước của. 
+**door_warning**: Receive notification when incorrect password is entered too many times.  
+**infor_log**: Receive notification when the door opens and when a stranger stands in front of the door for too long.
 
 ![Image](https://github.com/user-attachments/assets/4ab1b57e-5ace-4121-b9c9-64a33b7e6cba)
 <br>
 
-## 🚩 Sản phẩm thực tế  
+## 🚩 Actual Product  
 
 * PCB
-![Image](https://github.com/user-attachments/assets/269df91b-5e3a-450e-b532-fb00e08704b2)
 
-![Image](https://github.com/user-attachments/assets/50472e05-eca9-4d9c-98fe-9d993f899775)
 
-* Hình ảnh sản phẩm  
-![Image](https://github.com/user-attachments/assets/88b924fd-abc2-44f7-b6f4-481f6d430209)
+* Product Images  
+   
 
-![Image](https://github.com/user-attachments/assets/fd5854f6-4b77-405f-87bb-b847e87cf995) ![Image](https://github.com/user-attachments/assets/3d269879-631f-4f1b-ac46-a107465c9e8b)
-
-* Video chạy thử sản phẩm
-[![Image](https://github.com/user-attachments/assets/55edb567-d26a-446f-bcf1-1f8b7fd6939a)](https://youtu.be/wT6ALkm0E_8)
+* Product Demo Video  
 
 
 <br>
@@ -128,5 +123,5 @@ char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 
 <div align="center">
   <br>
-  <p>Cảm ơn bạn đã ghé thăm! Hy vọng repo này hữu ích cho việc học tập và nghiên cứu của bạn. 😊</p>
+  <p>Thank you for visiting! I hope this repo is useful for your learning and research. 😊</p>
   </div>
